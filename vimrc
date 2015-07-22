@@ -14,6 +14,10 @@ set shortmess+=I
 set wildmenu
 set showmatch
 
+" Set vertical rulers at column 80 and 100
+set colorcolumn=80,100
+highlight ColorColumn ctermbg=DarkGray
+
 "}}}
 
 " Searching {{{
@@ -63,6 +67,10 @@ nnoremap ; :
 
 " Plugins {{{
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/vim-gitgutter
+
+let g:gitgutter_avoid_cmd_prompt_on_windows = 0
+
 "}}}
 
 
