@@ -16,7 +16,7 @@ set wildmenu
 "}}}
 
 " Searching {{{
-
+set hlsearch
 "}}}
 
 " Spaces and Tabs {{{
@@ -37,6 +37,11 @@ set si
 " }}}
 
 " Key Bindings {{{
+
+" Remap leader to ","
+let mapleader=","
+
+" Toggle folding with space in normal mode
 nnoremap <space> za
 
 " Force use of hjkl for navigation in normal mode
@@ -44,6 +49,9 @@ noremap <Up> :echoerr "Use k dummy"<CR>
 noremap <Down> :echoerr "Use j dummy"<CR>
 noremap <Left> :echoerr "Use h dummy"<CR>
 noremap <Right> :echoerr "Use l dummy"<CR>
+
+"Clear search highlighting with <Leader> and return
+nnoremap <Leader><CR> :nohlsearch<CR>
 
 " }}}
 
