@@ -12,6 +12,7 @@ set noswapfile
 set ruler
 set shortmess+=I
 set wildmenu
+set showmatch
 
 "}}}
 
@@ -53,6 +54,11 @@ noremap <Right> :echoerr "Use l dummy"<CR>
 "Clear search highlighting with <Leader> and return
 nnoremap <Leader><CR> :nohlsearch<CR>
 
+" Shortcuts to edit and source vimrc file
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+nnoremap <Leader>ev :e $MYVIMRC<CR>
+
+nnoremap ; :
 " }}}
 
 " Plugins {{{
