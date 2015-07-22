@@ -11,7 +11,7 @@ set nowritebackup
 set noswapfile
 set ruler
 set shortmess+=I
-
+set wildmenu
 
 "}}}
 
@@ -37,7 +37,7 @@ set si
 " }}}
 
 " Key Bindings {{{
-
+nnoremap <space> za
 " }}}
 
 " Plugins {{{
