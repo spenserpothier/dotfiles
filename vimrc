@@ -39,4 +39,11 @@ set si
 " Key Bindings {{{
 
 " }}}
+
+" Plugins {{{
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+"}}}
+
+
+
 " vim:foldmethod=marker:foldlevel=0
