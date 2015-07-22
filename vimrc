@@ -68,6 +68,10 @@ nnoremap ; :
 " Plugins {{{
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-gitgutter
+set runtimepath^=~/.vim/bundle/vim-airline
+set runtimepath^=~/.vim/bundle/vim-fugitive
+
+set laststatus=2
 
 let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 
