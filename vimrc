@@ -38,6 +38,13 @@ set si
 
 " Key Bindings {{{
 nnoremap <space> za
+
+" Force use of hjkl for navigation in normal mode
+noremap <Up> :echoerr "Use k dummy"<CR>
+noremap <Down> :echoerr "Use j dummy"<CR>
+noremap <Left> :echoerr "Use h dummy"<CR>
+noremap <Right> :echoerr "Use l dummy"<CR>
+
 " }}}
 
 " Plugins {{{
