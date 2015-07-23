@@ -84,4 +84,7 @@ set modelines=1
 
 " }}}
 
+set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+let g:airline_powerline_fonts = 1
+
 " vim:foldmethod=marker:foldlevel=0
