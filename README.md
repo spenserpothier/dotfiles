@@ -1,12 +1,22 @@
-TODO: Write this
-TODO: Write shell script to auto symlink
-* Symlink ~/.vim to .vim/
-* Symlink ~/.vimrc to .vimrc
-TODO: More instructions
-Uses submodules, add instructions getting those
+# Description
 
-Plugins included:
+The dotfiles repository of Spenser Pothier
+
+## Configs being managed
+
+* Vim
+* Zsh
+* Git
+
+## Plugins included:
+
+### Vim
 
 * vim-airline
 * vim-gitgutter
 * ctrlp
+
+## Todo:
+
+- [ ] Write this
+- [ ] Write shell script to auto-symlink
