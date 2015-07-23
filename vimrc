@@ -1,7 +1,8 @@
 " Spenser Pothier vimrc
 
 " Colors {{{
-
+set t_Co=256
+colorscheme badwolf  
 "}}}
 
 " UI Layout {{{
@@ -9,10 +10,10 @@ set number
 set nobackup
 set nowritebackup
 set noswapfile
-set ruler
 set shortmess+=I
 set wildmenu
 set showmatch
+syntax enable
 
 " Set vertical rulers at column 80 and 100
 set colorcolumn=80,100
@@ -38,7 +39,7 @@ set si
 "}}}
 
 " Folding {{{
-  set modelines=1
+set foldenable
 " }}}
 
 " Key Bindings {{{
@@ -77,6 +78,9 @@ let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 
 "}}}
 
-
+" Vimrc Folding Stuff {{{
+set modeline
+set modelines=1
 
 " vim:foldmethod=marker:foldlevel=0
+" }}}
