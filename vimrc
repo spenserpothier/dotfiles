@@ -82,5 +82,6 @@ let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 set modeline
 set modelines=1
 
-" vim:foldmethod=marker:foldlevel=0
 " }}}
+
+" vim:foldmethod=marker:foldlevel=0
