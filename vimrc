@@ -19,6 +19,9 @@ syntax enable
 set colorcolumn=80,100
 highlight ColorColumn ctermbg=DarkGray
 
+" Font stuff for vim-airline
+set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+let g:airline_powerline_fonts = 1
 "}}}
 
 " Searching {{{
@@ -64,6 +67,10 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :e $MYVIMRC<CR>
 
 nnoremap ; :
+
+" Convert document to pdf (using pandoc)
+nnoremap <Leader>md :! pandoc %:t -o %:t:r.pdf
+
 " }}}
 
 " Plugins {{{
@@ -83,8 +90,5 @@ set modeline
 set modelines=1
 
 " }}}
-
-set guifont=Liberation\ Mono\ for\ Powerline\ 10 
-let g:airline_powerline_fonts = 1
 
 " vim:foldmethod=marker:foldlevel=0
