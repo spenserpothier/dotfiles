@@ -1,4 +1,5 @@
 " Spenser Pothier vimrc
+set nocompatible
 
 " Colors {{{
 set t_Co=256
@@ -78,6 +79,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/vim-gitgutter
 set runtimepath^=~/.vim/bundle/vim-airline
 set runtimepath^=~/.vim/bundle/vim-fugitive
+set runtimepath^=~/.vim/bundle/vim-ags
 
 set laststatus=2
 
