@@ -23,6 +23,10 @@ highlight ColorColumn ctermbg=DarkGray
 " Font stuff for vim-airline
 set guifont=Liberation\ Mono\ for\ Powerline\ 10 
 let g:airline_powerline_fonts = 1
+
+" Set different explore mode style
+let g:netrw_liststyle=3
+
 "}}}
 
 " Searching {{{
@@ -71,6 +75,9 @@ nnoremap ; :
 
 " Convert document to pdf (using pandoc)
 nnoremap <Leader>md :! pandoc %:t -o %:t:r.pdf
+
+" Explore mode
+map <Leader>e :E<cr>
 
 " }}}
 
