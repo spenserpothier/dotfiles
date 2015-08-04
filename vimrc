@@ -44,6 +44,12 @@ set tabstop=2
 " Auto indent, smart indent
 set ai
 set si
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+setlocal omnifunc=syntaxcomplete#Complete
+
 "}}}
 
 " Folding {{{
@@ -90,6 +96,7 @@ set runtimepath^=~/.vim/bundle/vim-gitgutter
 set runtimepath^=~/.vim/bundle/vim-airline
 set runtimepath^=~/.vim/bundle/vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-ags
+set runtimepath^=~/.vim/bundle/vim-ruby
 
 set laststatus=2
 
