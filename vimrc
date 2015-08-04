@@ -79,6 +79,9 @@ nnoremap <Leader>md :! pandoc %:t -o %:t:r.pdf
 " Explore mode
 map <Leader>e :E<cr>
 
+" Tab switching
+map <Leader>[ :tabp<cr>
+map <Leader>] :tabn<cr>
 " }}}
 
 " Plugins {{{
