@@ -97,6 +97,7 @@ set runtimepath^=~/.vim/bundle/vim-airline
 set runtimepath^=~/.vim/bundle/vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-ags
 set runtimepath^=~/.vim/bundle/vim-ruby
+set runtimepath^=~/.vim/bundle/vim-rubocop
 
 set laststatus=2
 
