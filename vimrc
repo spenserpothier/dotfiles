@@ -106,6 +106,8 @@ set laststatus=2
 
 let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 
+"let g:ackprg = 'ag'
+
 "}}}
 
 " Vimrc Folding Stuff {{{
