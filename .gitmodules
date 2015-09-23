@@ -19,3 +19,6 @@
 [submodule "vim/bundle/vim-rubocop"]
 	path = vim/bundle/vim-rubocop
 	url = https://github.com/ngmy/vim-rubocop.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

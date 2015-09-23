@@ -14,6 +14,7 @@ set noswapfile
 set shortmess+=I
 set wildmenu
 set showmatch
+set relativenumber
 syntax enable
 
 " Set vertical rulers at column 80 and 100
@@ -98,6 +99,8 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-ags
 set runtimepath^=~/.vim/bundle/vim-ruby
 set runtimepath^=~/.vim/bundle/vim-rubocop
+
+source ~/.vim/bundle/supertab/plugin/supertab.vim
 
 set laststatus=2
 
