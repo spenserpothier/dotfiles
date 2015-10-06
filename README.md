@@ -15,6 +15,11 @@ The dotfiles repository of Spenser Pothier
 * vim-airline
 * vim-gitgutter
 * ctrlp
+* supertab
+* vim-ags
+* vim-fugitive
+* vim-ruby
+* vim-rubocop
 
 ## Todo:
 
