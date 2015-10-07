@@ -89,6 +89,10 @@ map <Leader>e :E<cr>
 " Tab switching
 map <Leader>[ :tabp<cr>
 map <Leader>] :tabn<cr>
+
+" Use ctags + ctrlP = magic
+nnoremap <leader>. :CtrlPTag<cr>
+
 " }}}
 
 " Plugins {{{
