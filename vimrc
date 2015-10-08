@@ -49,6 +49,7 @@ syntax on
 filetype on
 filetype indent on
 filetype plugin on
+filetype plugin indent on
 setlocal omnifunc=syntaxcomplete#Complete
 
 "}}}
@@ -96,13 +97,8 @@ nnoremap <leader>. :CtrlPTag<cr>
 " }}}
 
 " Plugins {{{
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/vim-gitgutter
-set runtimepath^=~/.vim/bundle/vim-airline
-set runtimepath^=~/.vim/bundle/vim-fugitive
-set runtimepath^=~/.vim/bundle/vim-ags
-set runtimepath^=~/.vim/bundle/vim-ruby
-set runtimepath^=~/.vim/bundle/vim-rubocop
+" Load pathogen
+execute pathogen#infect()
 
 source ~/.vim/bundle/supertab/plugin/supertab.vim
 
