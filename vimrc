@@ -93,6 +93,8 @@ map <Leader>] :tabn<cr>
 " Use ctags + ctrlP = magic
 nnoremap <leader>. :CtrlPTag<cr>
 
+" Use jk in insertmode to escape
+inoremap jk <Esc>
 " }}}
 
 " Plugins {{{
