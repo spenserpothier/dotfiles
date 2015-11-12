@@ -96,6 +96,17 @@ nnoremap <leader>. :CtrlPTag<cr>
 
 " Use jk in insertmode to escape
 inoremap jk <Esc>
+
+" Fix some weird backspace issues in OSX, shouldn't have any adverse affects
+" in linux
+set backspace=indent,eol,start
+
+" Set CTRL+[hjkl] to navigate windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " }}}
 
 " Plugins {{{
