@@ -15,7 +15,17 @@ set shortmess+=I
 set wildmenu
 set showmatch
 set relativenumber
+set cursorline
+set incsearch
 syntax enable
+
+" Set spellcheck for markdown and gitcommit files
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd FileType gitcommit setlocal spell
+
+" Set json for .template files as I'm usually doing CFN templates which are
+" json
+autocmd BufRead,BufNewFile *.template set filetype=json
 
 " Set vertical rulers at column 80 and 100
 set colorcolumn=80,100
@@ -120,6 +130,16 @@ set laststatus=2
 let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 
 "let g:ackprg = 'ag'
+
+"}}}
+
+" Functions {{{
+
+" Pretty Print JSON
+com! PPJson %!jq '.'
+
+" Validate CFN template
+com! Validatecfn !aws cloudformation validate-template --template-body file:////%:p
 
 "}}}
 
