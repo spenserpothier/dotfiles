@@ -3,7 +3,7 @@ set nocompatible
 
 " Colors {{{
 set t_Co=256
-colorscheme badwolf  
+colorscheme badwolf
 "}}}
 
 " UI Layout {{{
@@ -14,7 +14,6 @@ set noswapfile
 set shortmess+=I
 set wildmenu
 set showmatch
-set relativenumber
 set cursorline
 set incsearch
 syntax enable
@@ -37,7 +36,11 @@ let g:airline_powerline_fonts = 1
 
 " Set different explore mode style
 let g:netrw_liststyle=3
+let g:netrw_winsize=-28
+let g:netrw_banner=0
+let g:netrw_browse_split=4
 
+set mouse=a
 "}}}
 
 " Searching {{{
