@@ -31,7 +31,7 @@ set colorcolumn=80,100
 highlight ColorColumn ctermbg=DarkGray
 
 " Font stuff for vim-airline
-set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+set guifont=Liberation\ Mono\ for\ Powerline\ 10
 let g:airline_powerline_fonts = 1
 
 " Set different explore mode style
