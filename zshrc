@@ -82,5 +82,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/Documents/shell/proxy-functions.sh
 
+source ~/.zshrc.local
