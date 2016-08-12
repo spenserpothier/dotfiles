@@ -34,5 +34,8 @@ Helm is for navigating. I'll make this intro better later
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 #+END_SRC
-
+** Projectile navigation
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x p") 'projectile-mode)
+#+END_SRC
 #+OPTIONS:     :tangle yes

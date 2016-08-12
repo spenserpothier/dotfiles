@@ -50,7 +50,9 @@ Return a list of installed packages or nil for every skipped package."
 			  'projectile
 			  'helm-projectile
 			  'org-bullets
-			  'org-beautify-theme)
+			  'org-beautify-theme
+                          'git-gutter+
+                          'magit)
 
 #+END_SRC
 ** Evil mode settings
@@ -83,5 +85,9 @@ Evil mode is VIM key bindings within emacs
    kept-old-versions 2
    version-control t)       ; use versioned backups
 #+END_SRC
+** Enable GitGutter+
 
+#+BEGIN_SRC emacs-lisp
+(global-git-gutter+-mode)
+#+END_SRC
 #+OPTIONS:     :tangle yes
