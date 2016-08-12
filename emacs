@@ -71,3 +71,17 @@ Return a list of installed packages or nil for every skipped package."
 (tool-bar-mode -1)
 ;;(menu-bar-mode -1)
 (toggle-scroll-bar -1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Org mode
+;;(org-mode t)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (python . t)
+   (ruby . t)
+   (sh . t)
+   (plantuml . t)
+   ))
+(setq org-plantuml-jar-path "/usr/share/plantuml/plantuml.jar")
+(setq backup-directory-alist `(("." . "~/.saves")))
