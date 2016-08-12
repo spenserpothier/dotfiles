@@ -1,0 +1,26 @@
+#+TITLE: Emacs Org-Mode Settings
+#+AUTHOR: Spenser Pothier
+#+EMAIL: mail@spenser.io
+#+DATE: [2016-08-12]
+#+TAGS: emacs
+
+[[http://orgmode.org][Org Mode]] was a feature of emacs that had always kept my interest, but the learning curve of emacs seemed daunting. I recently learned about [[https://www.emacswiki.org/emacs/Evil][Evil Mode]] which allows the use of VIM keybindings in emacs. Over the course of a few days, I became about 70-80% as quick getting around projects as I was with VIM. So with that in mind, I've been working on setting up emacs and learning how to use some of the powerful features it has that VIM is lacking. This file contains my org-mode settings, and uses a neat feature of org-mode called [[http://orgmode.org/manual/Extracting-source-code.html]["tangling"]]. See the bottom of the raw file for some details on how it is exported to the right location.
+
+* Initial Settings
+  These settings are for loading up languages to use with [[http://orgmode.org/worg/org-contrib/babel/intro.html#literate-programming][babel]]
+#+BEGIN_SRC emacs-lisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (python . t)
+   (ruby . t)
+   (sh . t)
+   (plantuml . t)
+   ))
+(setq org-plantuml-jar-path "/usr/share/plantuml/plantuml.jar")
+(setq org-src-preserve-indentation t)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+(provide 'init-org-mode)
+#+END_SRC

@@ -1,0 +1,38 @@
+#+TITLE: Emacs Org-Mode Settings
+#+AUTHOR: Spenser Pothier
+#+EMAIL: mail@spenser.io
+#+DATE: [2016-08-12]
+#+TAGS: emacs
+
+* Introduction
+Helm is for navigating. I'll make this intro better later
+
+** Init
+#+BEGIN_SRC emacs-lisp
+(require 'helm-config)
+(helm-mode t)
+#+END_SRC
+** projectile
+#+BEGIN_SRC emacs-lisp
+(helm-projectile-on)
+#+END_SRC
+** Use helm for buffer navigation
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+#+END_SRC
+
+** Use helm for bookmarks
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x r b") 'helm-bookmarks)
+#+END_SRC
+** Use helm for M-x commands
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x m") 'helm-M-x)
+#+END_SRC
+** Tabcomplete in find file
+#+BEGIN_SRC emacs-lisp
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+#+END_SRC
+
+#+OPTIONS:     :tangle yes
