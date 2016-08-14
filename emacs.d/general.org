@@ -64,7 +64,7 @@ Evil mode is VIM key bindings within emacs
 (setq key-chord-two-keys-delay 0.5)
 (key-chord-define evil-insert-state-map "jk" (lambda() (interactive) (evil-normal-state) (evil-forward-char)))
 (key-chord-mode 1)
-
+(define-key org-mode-map (kbd "C-i") 'org-cycle)
 ;; Powerline evilmode
 (powerline-evil-vim-color-theme)
 #+END_SRC
@@ -90,4 +90,62 @@ Evil mode is VIM key bindings within emacs
 #+BEGIN_SRC emacs-lisp
 (global-git-gutter+-mode)
 #+END_SRC
+
+* Helm
+Helm is for navigating. I'll make this intro better later
+
+** Init
+#+BEGIN_SRC emacs-lisp
+(require 'helm-config)
+(helm-mode t)
+#+END_SRC
+** projectile
+#+BEGIN_SRC emacs-lisp
+(helm-projectile-on)
+#+END_SRC
+** Use helm for buffer navigation
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+#+END_SRC
+
+** Use helm for bookmarks
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x r b") 'helm-bookmarks)
+#+END_SRC
+** Use helm for M-x commands
+#+BEGIN_SRC emacs-lisp 
+(global-set-key (kbd "C-x m") 'helm-M-x)
+#+END_SRC
+** Tabcomplete in find file
+#+BEGIN_SRC emacs-lisp
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+#+END_SRC
+** Projectile navigation
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x p") 'projectile-mode)
+#+END_SRC
+
+
+[[http://orgmode.org][Org Mode]] was a feature of emacs that had always kept my interest, but the learning curve of emacs seemed daunting. I recently learned about [[https://www.emacswiki.org/emacs/Evil][Evil Mode]] which allows the use of VIM keybindings in emacs. Over the course of a few days, I became about 70-80% as quick getting around projects as I was with VIM. So with that in mind, I've been working on setting up emacs and learning how to use some of the powerful features it has that VIM is lacking. This file contains my org-mode settings, and uses a neat feature of org-mode called [[http://orgmode.org/manual/Extracting-source-code.html]["tangling"]]. See the bottom of the raw file for some details on how it is exported to the right location.
+
+* Initial Settings
+  These settings are for loading up languages to use with [[http://orgmode.org/worg/org-contrib/babel/intro.html#literate-programming][babel]]
+#+BEGIN_SRC emacs-lisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (python . t)
+   (ruby . t)
+   (sh . t)
+   (plantuml . t)
+   ))
+(setq org-plantuml-jar-path "/usr/share/plantuml/plantuml.jar")
+(setq org-src-preserve-indentation t)
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+(provide 'init-org-mode)
+#+END_SRC
+
 #+OPTIONS:     :tangle yes
