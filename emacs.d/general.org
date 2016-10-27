@@ -92,6 +92,10 @@ Evil mode is VIM key bindings within emacs
    kept-old-versions 2
    version-control t)       ; use versioned backups
 #+END_SRC
+** Autocomplete settings
+#+BEGIN_SRC emacs-lisp
+(ac-config-default)
+#+END_SRC
 ** Enable GitGutter+
 
 #+BEGIN_SRC emacs-lisp
