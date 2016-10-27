@@ -11,9 +11,9 @@ General settings
 #+BEGIN_SRC emacs-lisp
 ;; Package manager
 (require 'package)
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (setq package-enable-at-startup nil)
 #+END_SRC
 
@@ -53,8 +53,13 @@ Return a list of installed packages or nil for every skipped package."
 			  'org-beautify-theme
                           'git-gutter+
                           'magit
-			  'smtpmail)
-
+			  'smtpmail
+			  'robe
+			  'inf-ruby
+			  'ledger-mode
+			  'ruby-mode
+			  'rubocop
+			  'org-trello)
 #+END_SRC
 ** Evil mode settings
 Evil mode is VIM key bindings within emacs
