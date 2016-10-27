@@ -78,6 +78,7 @@ Evil mode is VIM key bindings within emacs
 #+BEGIN_SRC emacs-lisp
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
+(load-theme 'wombat)
 #+END_SRC
    
 ** Settings for autosave
