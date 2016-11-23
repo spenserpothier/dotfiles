@@ -188,6 +188,16 @@ Helm is for navigating. I'll make this intro better later
 (setq mu4e-get-mail-command "offlineimap")
 (setq mail-user-agent 'mu4e-user-agent)
 (setq message-kill-buffer-on-exit t)
+(defvar ac-source-contacts
+  '((candidates . mu4e~contacts-for-completion)
+    (prefix . "^\\(?:To\\|CC\\|BCC\\): \\(?:.*, *\\)?\\(.*\\)")))
+ 
+(add-hook 'mu4e-compose-mode-hook
+          (lambda()
+            (setq ac-sources '(ac-source-contacts))
+            (auto-complete-mode)))
+
+(require 'org-mu4e)
 #+END_SRC
 * Item
 #+OPTIONS:     :tangle yes
