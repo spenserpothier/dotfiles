@@ -59,7 +59,12 @@ Return a list of installed packages or nil for every skipped package."
 			  'ledger-mode
 			  'ruby-mode
 			  'rubocop
-			  'org-trello)
+			  'org-trello
+			  'markdown-mode
+			  'writeroom-mode
+			  'mediawiki
+			  'sr-speedbar
+			  'rbenv)
 #+END_SRC
 ** Evil mode settings
 Evil mode is VIM key bindings within emacs
