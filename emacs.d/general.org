@@ -211,3 +211,10 @@ Helm is for navigating. I'll make this intro better later
 #+END_SRC
 * Item
 #+OPTIONS:     :tangle yes
+* Ruby/Rode
+Settings related to robe and ruby
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
+#+END_SRC
