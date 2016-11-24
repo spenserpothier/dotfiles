@@ -86,6 +86,11 @@ Evil mode is VIM key bindings within emacs
 (load-theme 'wombat)
 #+END_SRC
    
+#+BEGIN_SRC emacs-lisp
+(setq sr-speedbar-auto-refresh nil)
+(setq speedbar-show-unknown-files t) ; show all files
+(setq sr-speedbar-right-side nil) ; put on left side
+#+END_SRC
 ** Settings for autosave
 #+BEGIN_SRC emacs-lisp
 (setq
