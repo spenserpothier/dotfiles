@@ -64,7 +64,8 @@ Return a list of installed packages or nil for every skipped package."
 			  'writeroom-mode
 			  'mediawiki
 			  'sr-speedbar
-			  'rbenv)
+			  'rbenv
+			  'rspec-mode)
 #+END_SRC
 ** Evil mode settings
 Evil mode is VIM key bindings within emacs
