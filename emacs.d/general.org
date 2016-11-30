@@ -145,7 +145,7 @@ Helm is for navigating. I'll make this intro better later
 #+END_SRC
 ** Projectile navigation
 #+BEGIN_SRC emacs-lisp
-(global-set-key (kbd "C-x p") 'projectile-mode)
+(projectile-global-mode)
 #+END_SRC
 
 * Org Mode
