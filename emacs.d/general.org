@@ -226,6 +226,7 @@ Ledger mode stuff
 Settings related to robe and ruby
 
 #+BEGIN_SRC emacs-lisp
+(global-rbenv-mode)
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
 #+END_SRC
