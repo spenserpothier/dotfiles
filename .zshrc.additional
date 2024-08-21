@@ -5,6 +5,8 @@ export LESS=' -R'
 export KUBECONFIG=~/.kube/config
 
 export HISTCONTROL=ignorespace
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 
 # Path additions
 export GOPATH=~/go/bin
@@ -22,5 +24,24 @@ PATH_DIRS=(
   "${PATH}"
 )
 export PATH=${"${PATH_DIRS[*]}"// /:}
+export PATH=$PATH:${HOME}/Library/Application\ Support/JetBrains/Toolbox/scripts
+
+# Example to set tokens and passowrds from 1password as environment variables 
+#if [[ ! -v HOMEBREW_GITHUB_API_TOKEN ]]; then
+#  export HOMEBREW_GITHUB_API_TOKEN=$(op read "op://Private/Github Personal Access Token/credential")
+#fi
+
+# Launch k9s with dark skin or not
+function k9s() {
+	local darkmode=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+	if [[ $darkmode != "Dark" ]]
+	then
+		ln -sfn "$HOME/Library/Application Support/k9s/skins/solarized_light.yaml" "$HOME/Library/Application Support/k9s/skins/skin.yaml"
+	else
+		ln -sfn "$HOME/Library/Application Support/k9s/skins/solarized_dark.yaml" "$HOME/Library/Application Support/k9s/skins/skin.yaml"
+	fi
+	/Users/spothier/.asdf/installs/k9s/0.32.3/bin/k9s $*
+}
+
 
 eval "$(atuin init zsh)"
