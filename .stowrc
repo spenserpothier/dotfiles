@@ -1,0 +1,4 @@
+--target=$HOME
+--ignore="zshrc.local"
+--ignore=".zshrc.local"
+--ignore="*.md"
