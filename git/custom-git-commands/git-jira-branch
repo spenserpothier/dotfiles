@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+issue=$1
+
+if [ ! -z "$1" ]
+then
+	git checkout -b $(jira view $1 --template branch | sed 's/ /-/g')
+else
+	echo "JIRA Issue number not provided"
+fi
