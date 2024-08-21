@@ -1,5 +1,25 @@
 [user]
 	email = mail@spenser.io
 	name = Spenser Pothier
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIPAO/VscOfMGV3FbSB83zzrUanNiksYIsDbib47ji7A
+[url "ssh://git@github.com/"]
+    	insteadOf = https://github.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [init]
 	defaultBranch = main
+	templateDir = $HOME/.git-template
+[commit]
+	verbose = true
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[core]
+	excludesFile = ~/.gitignore
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[includeIf "gitdir:~/code/PatchSimple/"] # job needs, like workspace/* so all included projects
+    path = .gitconfig-job
