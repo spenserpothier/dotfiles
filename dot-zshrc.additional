@@ -12,6 +12,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export GOPATH=~/go/bin
 PATH_DIRS=(
   $GOPATH
+  "${GOPATH}/bin"
   "${KREW_ROOT:-$HOME/.krew}/bin"
   "$HOME/.bin"
   "/opt/homebrew/bin/"

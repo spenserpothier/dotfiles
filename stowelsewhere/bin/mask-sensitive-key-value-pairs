@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Found at https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better#real-world-example-seneca-cve-2019-5483
+
+awk -F'=' '
+BEGIN { OFS = "=" }
+$1 ~ /(KEY|TOKEN|PASSWORD)/ { len = length($2); $2 = sprintf("%*s", len, ""); gsub(/ /, "*", $2)}
+{ print $1, $2 }
+'
