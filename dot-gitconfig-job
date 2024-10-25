@@ -2,6 +2,10 @@
 	email = spenser.pothier@automox.com
 	name = Spenser Pothier
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIPAO/VscOfMGV3FbSB83zzrUanNiksYIsDbib47ji7A
+[url "ssh://git@github.com/"]
+    	insteadOf = https://github.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [gpg]
 	format = ssh
 [gpg "ssh"]

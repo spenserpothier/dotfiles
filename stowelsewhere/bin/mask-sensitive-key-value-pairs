@@ -3,6 +3,6 @@
 
 awk -F'=' '
 BEGIN { OFS = "=" }
-$1 ~ /(KEY|TOKEN|PASSWORD)/ { len = length($2); $2 = sprintf("%*s", len, ""); gsub(/ /, "*", $2)}
+$1 ~ /(KEY|TOKEN|PASSWORD|SALT|key|token|password|salt)/ { len = length($2); $2 = sprintf("%*s", len, ""); gsub(/ /, "*", $2)}
 { print $1, $2 }
 '
