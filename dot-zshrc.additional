@@ -41,7 +41,7 @@ function k9s() {
 	else
 		ln -sfn "$HOME/Library/Application Support/k9s/skins/solarized_dark.yaml" "$HOME/Library/Application Support/k9s/skins/skin.yaml"
 	fi
-	/Users/spothier/.asdf/installs/k9s/0.32.3/bin/k9s $*
+	/Users/spothier/.asdf/installs/k9s/0.40.10/bin/k9s $*
 }
 
 
