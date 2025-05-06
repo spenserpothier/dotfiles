@@ -1,0 +1,13 @@
+---
+syntax: bash
+tags: [ terraform, terragrunt ]
+---
+
+# To initialize
+terragrunt init
+
+# Additional debugging during apply, this will create a terragrunt-debug.tfvars.json
+terragrunt apply --terragrunt-log-level debug --terragrunt-debug
+
+# Remove cached files
+find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \; 
