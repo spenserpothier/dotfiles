@@ -23,6 +23,8 @@ PATH_DIRS=(
   "/sbin"
   "${HOME}/Library/Application\ Support/JetBrains/Toolbox/scripts"
   "${PATH}"
+  "${HOME}/code/aseprite/aseprite/build/bin/"
+  "${ASDF_DATA_DIR:-$HOME/.asdf}"
 )
 export PATH=${"${PATH_DIRS[*]}"// /:}
 export PATH=$PATH:${HOME}/Library/Application\ Support/JetBrains/Toolbox/scripts
