@@ -1,0 +1,26 @@
+# Ghostty settings
+# Largely inspired from https://マリウス.com/ghost-in-the-shell/
+# and https://catskull.net/fun-with-ghostty-shaders.html
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ Appearance                                                                 ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+theme = dark:catppuccin frappe,light:catppuccin latte
+
+background-opacity                 = 0.85
+background-blur                    = true
+
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ Font                                                                       ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+font-family = JetBrainsMonoNL Nerd Font Mono
+
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ Features                                                                   ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+scrollback-limit                   = 125000
+link-url                           = true
