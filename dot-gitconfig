@@ -1,7 +1,3 @@
-[user]
-	email = mail@spenser.io
-	name = Spenser Pothier
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPwjsE7dG8FUwjJ+U8+OIUYQWF59FpfYebMEUl8b7PGQ
 [url "ssh://git@github.com/"]
     	insteadOf = https://github.com/
 [url "git@github.com:"]
@@ -31,6 +27,10 @@
 	autocorrect = prompt
 [column]
 	ui = auto
+
+# Default user config
+[include]
+	path = .gitconfig-personal
 
 # Config for job
 

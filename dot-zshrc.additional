@@ -11,6 +11,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Path additions
 export GOPATH=~/go/bin
 PATH_DIRS=(
+  "${PATH}"
   $GOPATH
   "${GOPATH}/bin"
   "${KREW_ROOT:-$HOME/.krew}/bin"
@@ -22,12 +23,10 @@ PATH_DIRS=(
   "/usr/sbin"
   "/sbin"
   "${HOME}/Library/Application\ Support/JetBrains/Toolbox/scripts"
-  "${PATH}"
   "${HOME}/code/aseprite/aseprite/build/bin/"
   "${ASDF_DATA_DIR:-$HOME/.asdf}"
 )
 export PATH=${"${PATH_DIRS[*]}"// /:}
-export PATH=$PATH:${HOME}/Library/Application\ Support/JetBrains/Toolbox/scripts
 
 # Example to set tokens and passowrds from 1password as environment variables 
 #if [[ ! -v HOMEBREW_GITHUB_API_TOKEN ]]; then
