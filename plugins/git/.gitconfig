@@ -1,0 +1,5 @@
+[user]
+	email = mail@spenser.io
+	name = Spenser Pothier
+[init]
+	defaultBranch = main
